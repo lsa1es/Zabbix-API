@@ -2,4 +2,4 @@ HOWTO
 
 python HNID.py
 
-HOST;NOME;IP;DNS
+print HOST;NOME;IP;DNS
