@@ -1,0 +1,5 @@
+HOWTO
+
+python HNID.py
+
+HOST;NOME;IP;DNS
