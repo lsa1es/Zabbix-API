@@ -78,6 +78,6 @@ done
 PROXY_NAME=$(cat $PRX| awk 'NF>0' | awk -v RS='{"' -F\" '/^host/ {print $3}')
 rm -rf $PRX
 
-
+# PULO DO GATO - Efetuando o comando através do proxy descoberto e o proxy roda o zabbix_get no host.
 #sshpass -p 'pass' ssh -o StrictHostKeyChecking=no root@$PROXY_NAME "zabbix_get -s $IP -p $PORT -k system.run[\" $CMD \"] "
 ssh -o StrictHostKeyChecking=no root@$PROXY_NAME "zabbix_get -s $IP -p $PORT -k system.run[\"$CMD\"] "
