@@ -19,7 +19,7 @@ ZABBIX_PASS='pass'
 
 HOST=$1
 CMD=$2
-# FUNCAO DE AUTH
+# FUNCAO DE AUTENTICACAO
 authenticate()
 {
     wget -O- -o /dev/null $API --header 'Content-Type: application/json-rpc' --post-data "{
