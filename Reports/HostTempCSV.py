@@ -4,7 +4,7 @@ sys.setdefaultencoding('utf-8')
 import csv
 from zabbix_api import ZabbixAPI
 
-c = csv.writer(open("HostTemplate-280917.csv", "wb"), delimiter=";" )
+c = csv.writer(open("HostTemplate.csv", "wb"), delimiter=";" )
 
 c.writerow(["TEMPLATE","HOSTNAME"])
 
